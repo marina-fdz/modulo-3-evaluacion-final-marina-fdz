@@ -13,10 +13,10 @@ const htmlDetails = detCharacter ? (<article className="details__wrapper-card">
     <img className="card__img" src={detCharacter.img} alt={detCharacter.name} />
     <div className="card__text">
         <h2>{detCharacter.name}</h2>
-        <p>Status: {detCharacter.status}</p>
-        <p>Species: {detCharacter.species}</p>
-        <p>Origin: {detCharacter.origin}</p>
-        <p>Episodes: {detCharacter.episode}</p>
+        <p><strong>Status:</strong> {detCharacter.status}</p>
+        <p><strong>Species:</strong> {detCharacter.species}</p>
+        <p><strong>Origin:</strong> {detCharacter.origin}</p>
+        <p><strong>Episodes:</strong> {detCharacter.episode}</p>
     </div>
     </article>) : <p>Character not found</p>;
 

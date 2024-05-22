@@ -8,7 +8,7 @@ function Main({data, searchName, setSearchName, validationText, searchStatus, se
     
 
   return (
-    <main>
+    <main className="main">
         <Filters searchName={searchName} setSearchName={setSearchName} searchStatus={searchStatus} setSearchStatus={setSearchStatus} changeSpeciesSearch={changeSpeciesSearch} searchSpecies={searchSpecies}/>
         <p className="validation">{validationText}</p>
         <CharacterList data={data}/>

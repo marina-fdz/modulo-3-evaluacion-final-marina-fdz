@@ -8,7 +8,7 @@ function FilterByName({searchName, setSearchName}) {
 
   return (
     <>
-        <label htmlFor="search-name">Name</label>
+        <label htmlFor="search-name" className="input">Name</label>
         <input type="text" name="search-name" id="search-name" onChange={handleChange} value={searchName} placeholder="Morty"/>
     </>
   )

@@ -1,0 +1,36 @@
+.form{
+    padding-bottom: 40px;
+    width: 100%;
+    color: aqua;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (width > 1024px){
+    padding-bottom: 60px;
+    }
+    &__fieldset{
+        border: none;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+
+        &.name{
+            flex-direction: column;
+            gap: 5px;
+            padding-bottom: 20px;
+            width: 100%;
+            max-width: 40rem;
+
+            input{
+                background-color: black;
+                border: 1px solid aqua;
+                height: 3rem;
+                color: white;
+                padding: 20px;
+                font-family: 'Roboto Slab';
+
+            }
+        }
+    }
+}

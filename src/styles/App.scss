@@ -2,21 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
-  color: white
 }
 
 html{
   font-size: 62.5%;
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
 }
 
-.header{
+.body{
+  background-color: black;
+}
+
+.main{
   width: 100vw;
   display: flex;
-  justify-content: center;
-  padding: 20px;
-  &__logo{
-    width: 30rem;
-    
+  flex-direction: column;
+  padding: 0 20px 60px;
+  align-items: center;
+  color: aqua;
+  font-size: 1.4rem;
+  @media screen and (width > 768px){
+    padding: 20px 40px 60px;
+  }
+  @media screen and (width > 1024px){
+    padding: 40px 100px 100px;
   }
 }

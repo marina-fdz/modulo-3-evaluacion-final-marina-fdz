@@ -1,0 +1,18 @@
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (width > 480px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (width > 768px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr)
+    }
+    @media screen and (width > 1024px){
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

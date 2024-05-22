@@ -8,11 +8,14 @@ function FilterBySpecies({changeSpeciesSearch, searchSpecies}) {
   
     return (
     <>
-        <label htmlFor="Human">Human</label>
-        <input type="checkbox" name="Human" id="Human" onChange={handleCheckbox} checked={searchSpecies.includes('Human')}/>
-        <label htmlFor="Alien">Alien</label>
-        <input type="checkbox" name="Alien" id="Alien" onChange={handleCheckbox} checked={searchSpecies.includes('Alien')}/>
-                    
+        <div>
+            <label htmlFor="Human">Human</label>
+            <input type="checkbox" name="Human" id="Human" onChange={handleCheckbox} checked={searchSpecies.includes('Human')}/>
+        </div>
+        <div>
+            <label htmlFor="Alien">Alien</label>
+            <input type="checkbox" name="Alien" id="Alien" onChange={handleCheckbox} checked={searchSpecies.includes('Alien')}/>
+        </div>
     </>
     )
 }

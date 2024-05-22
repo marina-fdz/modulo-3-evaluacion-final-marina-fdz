@@ -1,0 +1,17 @@
+.header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    &__logo{
+      width: 30rem;
+      @media screen and (width > 768px){
+        padding-top: 30px;
+        width: 45rem;
+      }
+      @media screen and (width > 1024px){
+        width: 60rem;
+        padding-top: 40px;
+      }
+    }
+  }
