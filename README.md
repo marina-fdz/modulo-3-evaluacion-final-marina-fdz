@@ -95,7 +95,7 @@ Start the server
   npm run dev
 ```
 
-- The application will run in your default browser.
+The application will run in your default browser.
 
 
 
