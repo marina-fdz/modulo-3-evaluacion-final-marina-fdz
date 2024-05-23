@@ -8,14 +8,10 @@
 Welcome to the Rick and Morty Character Search App. This is an evaluation exercise that's part of Module 3 of Adalab's bootcamp.
 
 
-## Project Overview
+## Overview
 
-The goal of this project is to create a simple yet functional web application that can search for characters from the "Rick and Morty" show. Users will be able to search for characters by name, filter them by features and view detailed information about each character.
+Simple yet functional web application that can search for characters from the "Rick and Morty" show. Users will be able to search for characters by name, filter them by features and view detailed information about each character.
 
-
-## Demo
-
-http://beta.adalab.es/modulo-3-evaluacion-final-marina-fdz/
 
 ## Features
 
@@ -23,6 +19,21 @@ http://beta.adalab.es/modulo-3-evaluacion-final-marina-fdz/
 - **Character List:** Display a list of characters matching the search criteria.
 - **Character Details:** View detailed information about each character, including their image, status, species, origin and number of episodes they're on.
 - **Responsive Design:** Ensure the app is usable on both desktop and mobile devices.
+
+
+## Demo
+
+http://beta.adalab.es/modulo-3-evaluacion-final-marina-fdz/
+
+
+## How to use
+
+1. **Search for Characters:** Use the search bar at the top of the page to type in a character's name. The results displayed will update as the user types.
+
+2. **Filter by Features:** Additional to the name search, it is possible to filter the results by the species they belong (human or alien) o to check whether they are alive, dead, or that is classified information.
+
+3. **View Character Details:** Click on a character's card to view more detailed information about them. On the top-right corner there's button that when clicked will go back to the previus search.
+
 
 
 ## Tech Stack
