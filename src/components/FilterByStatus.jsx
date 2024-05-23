@@ -1,14 +1,14 @@
+import PropTypes from "prop-types";
 
-
-function FilterByStatus({searchStatus, setSearchStatus}) {
+function FilterByStatus({search, setSearch}) {
 
     const handleSelect = (ev) => {
-        setSearchStatus(ev.target.value);
+        setSearch({...search, status: ev.target.value});
     }
 
   return (
     <>
-        <select name="" id="" onChange={handleSelect} value={searchStatus}>
+        <select name="" id="" onChange={handleSelect} value={search.status}>
             <option value="">All</option>
             <option value="Alive">Alive</option>
             <option value="Dead">Dead</option>
@@ -17,5 +17,10 @@ function FilterByStatus({searchStatus, setSearchStatus}) {
     </>
   )
 }
+
+FilterByStatus.propTypes = {
+  search: PropTypes.object,
+  setSearch: PropTypes.func,
+};
 
 export default FilterByStatus
