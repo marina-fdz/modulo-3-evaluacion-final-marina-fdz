@@ -33,6 +33,7 @@
 
         &-reset{
             width: 9rem;
+            height: 4rem;
             background-color: #00cccc;
             font-family: 'Roboto Slab';
             font-size: 1.6rem;
@@ -57,7 +58,7 @@
             padding-left: 10px;
             @media screen and (width > 480px){
                 &:hover{
-                    ccolor: #ccff66;
+                    color: #ccff66;
                     border: 1px solid #ccff66;
                 }
             }

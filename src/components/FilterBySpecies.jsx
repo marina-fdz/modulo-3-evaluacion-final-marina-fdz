@@ -7,16 +7,16 @@ function FilterBySpecies({changeSpeciesSearch, search}) {
     }
   
     return (
-    <>
+    <div>
         <div className="form__fieldset-chbox">
-            <label htmlFor="Human">Human</label>
             <input type="checkbox" name="Human" id="Human" onChange={handleCheckbox} checked={search.species.includes('Human')}/>
+            <label htmlFor="Human">Human</label>
         </div>
         <div className="form__fieldset-chbox">
-            <label htmlFor="Alien">Alien</label>
             <input type="checkbox" name="Alien" id="Alien" onChange={handleCheckbox} checked={search.species.includes('Alien')}/>
+            <label htmlFor="Alien">Alien</label>
         </div>
-    </>
+    </div>
     )
 }
 

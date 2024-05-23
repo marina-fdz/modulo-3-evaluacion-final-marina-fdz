@@ -58,8 +58,8 @@ App.jsx
  ├─ Main.jsx
  |  ├─ Filters.jsx
  |  |   ├─ FilterByName.jsx
- |  |   ├─ FilterByStatus.jsx
- |  |   └─ FilterBySpecies.jsx
+ |  |   ├─ FilterBySpecies.jsx
+ |  |   └─ FilterByStatus.jsx
  |  └─ CharacterList.jsx
  |      └─ CharacterCard.jsx
  ├─ CharacterDetail.jsx
