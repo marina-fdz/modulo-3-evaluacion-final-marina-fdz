@@ -1,6 +1,6 @@
 ![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
-![Rick&Morty](https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg)
+![Rick&Morty](https://www.indiewire.com/wp-content/uploads/2022/10/Rick-Morty-Season-6-Fire-Eyes.png)
 
 
 # Rick and Morty Character Search App
