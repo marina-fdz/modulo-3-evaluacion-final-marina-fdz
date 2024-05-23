@@ -7,7 +7,7 @@ Welcome to the Rick and Morty Character Search App. This is an evaluation exerci
 
 ## Project Overview
 
-The goal of this project is to create a simple yet functional web application that can search for characters from the "Rick and Morty" show. Users will be able to search for characters by name and view detailed information about each character.
+The goal of this project is to create a simple yet functional web application that can search for characters from the "Rick and Morty" show. Users will be able to search for characters by name, filter them by features and view detailed information about each character.
 
 
 ## Demo
