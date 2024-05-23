@@ -1,5 +1,8 @@
 ![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
+![Rick&Morty](https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg)
+
+
 # Rick and Morty Character Search App
 
 Welcome to the Rick and Morty Character Search App. This is an evaluation exercise that's part of Module 3 of Adalab's bootcamp.
@@ -12,7 +15,7 @@ The goal of this project is to create a simple yet functional web application th
 
 ## Demo
 
-
+http://beta.adalab.es/modulo-3-evaluacion-final-marina-fdz/
 
 ## Features
 
@@ -31,6 +34,26 @@ The goal of this project is to create a simple yet functional web application th
 - GIT / GITHUB
 - SASS / SCSS
 - [API](https://rickandmortyapi.com/api/character)
+
+
+
+## Components tree
+
+The body of the app has this structure:
+
+```
+App.jsx
+ ├─ Header.jsx 
+ ├─ Main.jsx
+ |  ├─ Filters.jsx
+ |  |   ├─ FilterByName.jsx
+ |  |   ├─ FilterByStatus.jsx
+ |  |   └─ FilterBySpecies.jsx
+ |  └─ CharacterList.jsx
+ |      └─ CharacterCard.jsx
+ ├─ CharacterDetail.jsx
+ └─ NotFound.jsx
+```
 
 
 
@@ -66,6 +89,6 @@ Start the server
 
 
 
-### Author
+## Author
 
-- [@marina-fdz](https://www.github.com/marina-fdz)
+[@marina-fdz](https://www.github.com/marina-fdz)

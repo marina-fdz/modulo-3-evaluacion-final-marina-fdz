@@ -9,9 +9,10 @@
     font-size: 1.4rem;
 
     &:hover{
-        color: yellow;
         cursor: pointer;
-        transform: scale(90%);
+        transform: scale(95%);
+        background-color: #ccff66;
+        color: #00cccc;
     }
 
     &-img{
