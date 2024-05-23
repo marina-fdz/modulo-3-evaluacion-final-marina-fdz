@@ -1,5 +1,6 @@
 import CharacterCard from "./CharacterCard"
 import "../styles/CharacterList.scss";
+import PropTypes from "prop-types";
 
 
 function CharacterList({data}) {
@@ -11,5 +12,9 @@ function CharacterList({data}) {
     </section>
   )
 }
+
+CharacterList.propTypes = {
+  data: PropTypes.object,
+};
 
 export default CharacterList

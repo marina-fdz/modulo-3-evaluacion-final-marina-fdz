@@ -11,37 +11,38 @@ function App() {
 
 
   const [characters, setCharacters] = useState([]);
-  const [searchName, setSearchName] = useState('');
-  const [searchStatus, setSearchStatus] = useState('');
-  const [searchSpecies, setSearchSpecies] = useState([]);
-
-
+  const [search, setSearch] = useState({
+    name: '',
+    status: '',
+    species: []
+  })
+  
   useEffect(()=>{
     getDataFromApi().then((charactersArray) => { setCharacters(charactersArray) })
   }, [])
 
 
   const changeSpeciesSearch = (value) =>{
-    if(searchSpecies.includes(value)){
-      const newSpecies = searchSpecies.filter(species => species !== value);
-      setSearchSpecies(newSpecies);
+    if(search.species.includes(value)){
+      const newSpecies = search.species.filter(species => species !== value);
+      setSearch({...search, species: newSpecies});
     }else{
-      setSearchSpecies([...searchSpecies, value]);
+      setSearch({...search, species: [...search.species, value]});
     }
   }
 
 
   const filterData = characters.filter((character) => {
-    return character.name.toLowerCase().includes(searchName.toLowerCase());
-  }).filter((character) => searchStatus ? character.status === searchStatus : true).filter((character) => {
-    if(searchSpecies.length === 0){
+    return character.name.toLowerCase().includes(search.name.toLowerCase());
+  }).filter((character) => search.status ? character.status === search.status : true).filter((character) => {
+    if(search.species.length === 0){
       return true;
     }else{
-      return searchSpecies.includes(character.species);
+      return search.species.includes(character.species);
     }
   })
 
-    const filterValidation = filterData.length === 0 ? `No results found by the name ${searchName}` : '';
+    const filterValidation = filterData.length === 0 ? `No results found by the name ${search.name}` : '';
 
     const getDetails = (id) => {
       const clickedCharacter = characters.find(character => character.id === id);
@@ -54,7 +55,7 @@ function App() {
     <>
     <Header />
     <Routes>
-      <Route path="/" element={<Main data={filterData} searchName={searchName} setSearchName={setSearchName} validationText={filterValidation} searchStatus={searchStatus} setSearchStatus={setSearchStatus} changeSpeciesSearch={changeSpeciesSearch} searchSpecies={searchSpecies} />} />
+      <Route path="/" element={<Main data={filterData} search={search} setSearch={setSearch} validationText={filterValidation}  changeSpeciesSearch={changeSpeciesSearch} />} />
       <Route path="/detail/:id" element={<CharacterDetail getDetails={ getDetails } />} />
       <Route path="*" element={<NotFound />}/>
     </Routes>
