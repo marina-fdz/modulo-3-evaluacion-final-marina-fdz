@@ -12,7 +12,7 @@ function CharacterCard({data}) {
                 <h3>{data.name}</h3>
                 <p>{data.species}</p>
               </div>
-              <span class="material-symbols-outlined">{data.status === 'Dead' ? 'skull' : ''}</span>
+              <span className="material-symbols-outlined">{data.status === 'Dead' ? 'skull' : ''}</span>
             </div>
         </Link>
     </article>

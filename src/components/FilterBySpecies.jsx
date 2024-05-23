@@ -8,11 +8,11 @@ function FilterBySpecies({changeSpeciesSearch, searchSpecies}) {
   
     return (
     <>
-        <div>
+        <div className="form__fieldset-chbox">
             <label htmlFor="Human">Human</label>
             <input type="checkbox" name="Human" id="Human" onChange={handleCheckbox} checked={searchSpecies.includes('Human')}/>
         </div>
-        <div>
+        <div className="form__fieldset-chbox">
             <label htmlFor="Alien">Alien</label>
             <input type="checkbox" name="Alien" id="Alien" onChange={handleCheckbox} checked={searchSpecies.includes('Alien')}/>
         </div>

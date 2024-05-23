@@ -18,7 +18,7 @@ const htmlDetails = detCharacter ? (<article className="details__wrapper-card">
         <p><strong>Origin:</strong> {detCharacter.origin}</p>
         <p><strong>Episodes:</strong> {detCharacter.episode}</p>
     </div>
-    </article>) : <p>Character not found</p>;
+    </article>) : <h2>The character you are looking for does not exist</h2>;
 
   return (
     <section className="details">

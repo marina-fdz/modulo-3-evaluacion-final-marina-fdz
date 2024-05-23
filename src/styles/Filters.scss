@@ -8,12 +8,30 @@
     align-items: center;
     @media screen and (width > 1024px){
     padding-bottom: 60px;
+    font-size: 1.6rem;
     }
     &__fieldset{
         border: none;
         display: flex;
         gap: 20px;
         justify-content: center;
+
+        &-chbox{
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            &:hover{
+                color: yellow;
+            }
+        }
+
+        select{
+            font-size: 1.4rem;
+            font-family: 'Roboto Slab';
+            @media screen and (width > 1024px){
+                font-size: 1.6rem;
+                }
+        }
 
         &.name{
             flex-direction: column;
@@ -29,8 +47,11 @@
                 color: white;
                 padding: 20px;
                 font-family: 'Roboto Slab';
-
+                @media screen and (width > 1024px){
+                    font-size: 1.6rem;
+                    }
             }
         }
+        
     }
 }

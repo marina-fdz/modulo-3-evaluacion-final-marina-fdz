@@ -1,0 +1,25 @@
+.notfound{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 70px 20px;
+    text-align: center;
+    &__img{
+        width: 100%;
+        max-width: 80rem;
+    }
+    &__link{
+        text-decoration: none;
+        color: aqua;
+        padding-bottom: 20px;
+        &::before{
+            content: '< ';
+        }
+        &:hover{
+            color: yellow;
+        }
+    }
+}

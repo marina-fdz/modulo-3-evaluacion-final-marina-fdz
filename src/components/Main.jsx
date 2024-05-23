@@ -1,6 +1,7 @@
 
-import CharacterList from "./CharacterList"
-import Filters from "./Filters"
+import CharacterList from "./CharacterList";
+import Filters from "./Filters";
+import "../styles/Main.scss";
 
 
 

@@ -2,12 +2,12 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 40px 20px;
     &__logo{
       width: 30rem;
       @media screen and (width > 768px){
-        padding-top: 30px;
         width: 45rem;
+        padding-top: 20px;
       }
       @media screen and (width > 1024px){
         width: 60rem;
