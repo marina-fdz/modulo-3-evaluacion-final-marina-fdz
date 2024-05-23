@@ -10,7 +10,7 @@ Welcome to the Rick and Morty Character Search App. This is an evaluation exerci
 
 ## Overview
 
-Simple yet functional web application that can search for characters from the "Rick and Morty" show. Users will be able to search for characters by name, filter them by features and view detailed information about each character.
+Simple yet functional web application that can search for characters from the "Rick and Morty" show. Users will be able to search for characters by name, filter them by features and view detailed information about each one.
 
 
 ## Features
