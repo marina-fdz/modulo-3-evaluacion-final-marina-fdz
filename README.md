@@ -95,8 +95,7 @@ Start the server
   npm run dev
 ```
 
-The application will run in your default browser.
-
+Open your web browser and go to http://localhost:3000 to see the app in action.
 
 
 

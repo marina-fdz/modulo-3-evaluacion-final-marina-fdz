@@ -1,18 +1,18 @@
-
-
 .list__card{
     background-color: #00cccc;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 1.4rem;
-
-    &:hover{
-        cursor: pointer;
-        transform: scale(95%);
-        background-color: #ccff66;
-        color: #00cccc;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    @media screen and (width > 480px){
+        &:hover{
+            cursor: pointer;
+            transform: scale(95%);
+            background-color: #ccff66;
+            color: #00cccc;
+        }
     }
 
     &-img{
@@ -20,11 +20,9 @@
     }
 
     &-wrapper{
-        
         display: flex;
         justify-content: space-between;
         padding: 20px;
-
     }
 
     

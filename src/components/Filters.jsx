@@ -11,14 +11,19 @@ function Filters({search, setSearch, changeSpeciesSearch}) {
         ev.preventDefault()
     };
 
+    const handleReset = () => {
+        setSearch({name: '', status: '', species: []})
+    };
+
   return (
     <form className="form" onSubmit={handleSubmit} >
       <fieldset className="form__fieldset name">
         <FilterByName search={search} setSearch={setSearch}/>
       </fieldset>
       <fieldset className="form__fieldset">
-        <FilterByStatus search={search} setSearch={setSearch} />
         <FilterBySpecies changeSpeciesSearch={changeSpeciesSearch} search={search}/>
+        <FilterByStatus search={search} setSearch={setSearch} />
+        <input className="form__fieldset-reset" type="reset" value="< Reset" onClick={handleReset}/>
       </fieldset>
     </form>
   )

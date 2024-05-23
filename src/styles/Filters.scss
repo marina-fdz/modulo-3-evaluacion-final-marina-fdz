@@ -1,14 +1,18 @@
 .form{
-    padding-bottom: 40px;
+    padding: 10px 0 20px;
+    margin-bottom: 20px;
     width: 100%;
-    color: aqua;
-    font-size: 1.4rem;
+    color: #00cccc;
+    font-size: 1.6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 50;
     @media screen and (width > 1024px){
-    padding-bottom: 60px;
-    font-size: 1.6rem;
+    margin-bottom: 60px;
     }
     &__fieldset{
         border: none;
@@ -20,17 +24,44 @@
             display: flex;
             align-items: baseline;
             gap: 10px;
-            &:hover{
-                color: #ccff66;
+            @media screen and (width > 480px){
+                &:hover{
+                    color: #ccff66;
+                }
+            }
+        }
+
+        &-reset{
+            width: 9rem;
+            background-color: #00cccc;
+            font-family: 'Roboto Slab';
+            font-size: 1.6rem;
+            border: none;
+            border-radius: 3px;
+            @media screen and (width > 480px){
+                &:hover{
+                    background-color: #ccff66;
+                }
             }
         }
 
         select{
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-family: 'Roboto Slab';
-            @media screen and (width > 1024px){
-                font-size: 1.6rem;
+            background-color: black;
+            border: 1px solid #00cccc;
+            color: #00cccc;
+            height: 4rem;
+            width: 9rem;
+            border-radius: 3px;
+            padding-left: 10px;
+            @media screen and (width > 480px){
+                &:hover{
+                    ccolor: #ccff66;
+                    border: 1px solid #ccff66;
                 }
+            }
+            
         }
 
         &.name{
@@ -42,14 +73,19 @@
 
             input{
                 background-color: black;
-                border: 1px solid aqua;
-                height: 3rem;
+                border: 1px solid #00cccc;
+                height: 4rem;
                 color: white;
                 padding: 20px;
                 font-family: 'Roboto Slab';
-                @media screen and (width > 1024px){
-                    font-size: 1.6rem;
+                font-size: 1.6rem;
+                border-radius: 3px;
+                @media screen and (width > 480px){
+                    &:hover{
+                        border: 1px solid #ccff66;
                     }
+                }
+                
             }
         }
         

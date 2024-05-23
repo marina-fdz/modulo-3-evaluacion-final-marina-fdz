@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 
 
 function Main({data, search, setSearch, validationText, changeSpeciesSearch}) {
-    
 
   return (
     <main className="main">

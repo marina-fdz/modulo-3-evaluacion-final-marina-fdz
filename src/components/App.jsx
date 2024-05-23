@@ -42,7 +42,7 @@ function App() {
     }
   })
 
-    const filterValidation = filterData.length === 0 ? <> No results found by the name <span className='error-text'>{search.name}</span> </> : '';
+    const filterValidation = filterData.length === 0 ? <> No results found by the name <span className='error-text'>{search.name}</span> and those features. Please, try something else. </> : '';
 
     const getDetails = (id) => {
       const clickedCharacter = characters.find(character => character.id === id);

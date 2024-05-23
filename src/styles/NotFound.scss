@@ -5,21 +5,35 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    padding: 70px 20px;
+    padding: 10px 20px;
     text-align: center;
     &__img{
+        padding-top: 70px;
         width: 100%;
-        max-width: 80rem;
+        @media screen and (width > 780px){
+            @media screen and (height < 780px){
+                padding-top: 0;
+                width: 30%;
+            }
+        }
     }
     &__link{
         text-decoration: none;
-        color: aqua;
-        padding-bottom: 20px;
+        padding-top: 40px;
+        padding-bottom: 5px;
+        color: #00cccc;;
         &::before{
             content: '< ';
         }
+        @media screen and (width > 780px){
+            @media screen and (height < 780px){
+                padding-top: 0;
+            }
+        }
         &:hover{
-            color: #ccff66;
+            @media screen and (width > 480px){
+                color: #ccff66;
+            }
         }
     }
 }
