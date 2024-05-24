@@ -11,14 +11,22 @@
     top: 0;
     background-color: black;
     z-index: 50;
+    @media screen and (width > 780px){
+        flex-direction: row;
+        gap: 20px;
+        padding-bottom: 0;
+        align-items: flex-end;
+        }
     @media screen and (width > 1024px){
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     }
     &__fieldset{
+        width: 100%;
         border: none;
         display: flex;
         gap: 20px;
-        justify-content: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
 
         &-chbox{
             display: flex;
@@ -32,8 +40,9 @@
         }
 
         &-reset{
-            width: 9rem;
+            width: 35%;
             height: 4rem;
+            color: black;
             background-color: #00cccc;
             font-family: 'Roboto Slab';
             font-size: 1.6rem;
@@ -44,6 +53,9 @@
                     background-color: #ccff66;
                 }
             }
+            @media screen and (width > 780px){
+                margin-top: 2px;
+            }
         }
 
         select{
@@ -53,7 +65,7 @@
             border: 1px solid #00cccc;
             color: #00cccc;
             height: 4rem;
-            width: 9rem;
+            width: 35%;
             border-radius: 3px;
             padding-left: 10px;
             @media screen and (width > 480px){
@@ -62,22 +74,24 @@
                     border: 1px solid #ccff66;
                 }
             }
+            @media screen and (width > 780px){
+                order: -1;
+                margin-top: 2px;
+            }
             
         }
 
         &.name{
             flex-direction: column;
             gap: 5px;
-            padding-bottom: 20px;
             width: 100%;
-            max-width: 40rem;
 
             input{
                 background-color: black;
                 border: 1px solid #00cccc;
                 height: 4rem;
                 color: white;
-                padding: 20px;
+                padding: 0 20px;
                 font-family: 'Roboto Slab';
                 font-size: 1.6rem;
                 border-radius: 3px;

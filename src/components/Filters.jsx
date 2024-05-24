@@ -8,11 +8,11 @@ import PropTypes from "prop-types";
 function Filters({search, setSearch, changeSpeciesSearch}) {
 
     const handleSubmit = (ev) => {
-        ev.preventDefault()
+        ev.preventDefault();
     };
 
     const handleReset = () => {
-        setSearch({name: '', status: '', species: []})
+        setSearch({name: '', status: '', species: []});
     };
 
   return (
