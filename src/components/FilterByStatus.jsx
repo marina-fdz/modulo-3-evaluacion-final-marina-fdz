@@ -8,7 +8,7 @@ function FilterByStatus({search, setSearch}) {
 
   return (
     <>
-        <select name="" id="" onChange={handleSelect} value={search.status}>
+        <select name="status" id="status" onChange={handleSelect} value={search.status}>
             <option value="">All</option>
             <option value="Alive">Alive</option>
             <option value="Dead">Dead</option>
