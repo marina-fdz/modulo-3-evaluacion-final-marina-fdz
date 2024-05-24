@@ -17,11 +17,11 @@ function Main({data, search, setSearch, validationText, changeSpeciesSearch}) {
 }
 
 Main.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.array,
   search: PropTypes.object,
   setSearch: PropTypes.func,
   changeSpeciesSearch: PropTypes.func,
-  validationText: PropTypes.string,
+  validationText: PropTypes.any,
 };
 
 export default Main
