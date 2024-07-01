@@ -23,7 +23,7 @@ Simple yet functional web application that can search for characters from the "R
 
 ## Demo
 
-http://beta.adalab.es/modulo-3-evaluacion-final-marina-fdz/
+https://marina-fdz.github.io/modulo-3-evaluacion-final-marina-fdz/
 
 
 ## How to use
