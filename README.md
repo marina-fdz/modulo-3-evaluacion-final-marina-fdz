@@ -80,7 +80,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd modulo-3-evaluacion-final-marina-fdz
 ```
 
 Install dependencies
